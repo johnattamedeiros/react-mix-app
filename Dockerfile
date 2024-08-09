@@ -1,5 +1,5 @@
 # Usa uma imagem base do Node.js
-FROM node:18
+FROM node:20
 
 # Define o diretório de trabalho
 WORKDIR /app
@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Expõe a porta 3001
-EXPOSE 3001
+EXPOSE 80
 
 # Comando para iniciar o servidor
-CMD ["npx", "serve", "-s", "build", "-l", "3001"]
+CMD ["npx", "serve", "-s", "build", "-l", "80"]
