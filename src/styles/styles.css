@@ -1,53 +1,72 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1e1e1e;
-    color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .home-page {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .player-card {
-    background-color: #333;
-    border: 1px solid #444;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 10px;
-    overflow: hidden;
-    width: 200px;
-    text-align: center;
-  }
-  
-  .player-photo {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #444;
-  }
-  
-  .player-info {
-    padding: 10px;
-  }
-  
-  .player-name {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .player-stats {
-    font-size: 14px;
-    margin: 5px 0;
-  }
-  
-  .loading {
-    text-align: center;
-    color: #fff;
-    font-size: 24px;
-    margin-top: 50px;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.player-card {
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+}
+
+.player-photo {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #444;
+}
+
+.player-info {
+  padding: 10px;
+}
+.white{
+  color: white;
+}
+
+.player-name {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.player-stats {
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.player-stats-t{
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+.stats-ico {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.loading {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 50px;
+}

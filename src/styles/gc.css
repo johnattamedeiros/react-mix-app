@@ -1,0 +1,349 @@
+.gcf-badge-level[data-v-2ca8c8ec] {
+    border: 1px solid hsla(0, 0%, 100%, .2);
+    font-size: 12px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .6);
+    -webkit-box-shadow: 0 5px 3px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 5px 3px 0 rgba(0, 0, 0, .15);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    border-radius: 100%;
+    padding: 0;
+    min-width: auto;
+    text-align: center;
+    position: relative
+}
+
+.gcf-badge-level-0[data-v-2ca8c8ec] {
+    background-color: #58597a
+}
+
+.gcf-badge-level-1[data-v-2ca8c8ec] {
+    background-color: #643284
+}
+
+.gcf-badge-level-2[data-v-2ca8c8ec] {
+    background-color: #5c2d84
+}
+
+.gcf-badge-level-3[data-v-2ca8c8ec] {
+    background-color: #532883
+}
+
+.gcf-badge-level-4[data-v-2ca8c8ec] {
+    background-color: #492381
+}
+
+.gcf-badge-level-5[data-v-2ca8c8ec] {
+    background-color: #402686
+}
+
+.gcf-badge-level-6[data-v-2ca8c8ec] {
+    background-color: #2d3a8a
+}
+
+.gcf-badge-level-7[data-v-2ca8c8ec],
+.gcf-badge-level-8[data-v-2ca8c8ec] {
+    background-color: #2967b0
+}
+
+.gcf-badge-level-9[data-v-2ca8c8ec] {
+    background-color: #2a7bc2
+}
+
+.gcf-badge-level-10[data-v-2ca8c8ec] {
+    background-color: #2a8acc
+}
+
+.gcf-badge-level-11[data-v-2ca8c8ec] {
+    background-color: #3e9cb7
+}
+
+.gcf-badge-level-12[data-v-2ca8c8ec] {
+    background-color: #53a18b
+}
+
+.gcf-badge-level-13[data-v-2ca8c8ec] {
+    background-color: #68a761
+}
+
+.gcf-badge-level-14[data-v-2ca8c8ec] {
+    background-color: #7cac35
+}
+
+.gcf-badge-level-15[data-v-2ca8c8ec] {
+    background-color: #91b20a
+}
+
+.gcf-badge-level-16[data-v-2ca8c8ec] {
+    background-color: #bdb700
+}
+
+.gcf-badge-level-17[data-v-2ca8c8ec] {
+    background-color: #f0bc00
+}
+
+.gcf-badge-level-18[data-v-2ca8c8ec] {
+    background-color: #f89a06
+}
+
+.gcf-badge-level-19[data-v-2ca8c8ec] {
+    background-color: #f46e12
+}
+
+.gcf-badge-level-20[data-v-2ca8c8ec] {
+    background-color: #eb2f2f
+}
+
+.gcf-badge-level-21[data-v-2ca8c8ec] {
+    background-color: #ff00c0
+}
+
+.gcf-badge-level-20[data-v-2ca8c8ec] {
+    -webkit-animation-name: gcfFreeLevel20Pulse-data-v-2ca8c8ec;
+    animation-name: gcfFreeLevel20Pulse-data-v-2ca8c8ec;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
+.gcf-badge-level-21[data-v-2ca8c8ec] {
+    -webkit-animation-name: gcfFreeLevel21Pulse-data-v-2ca8c8ec;
+    animation-name: gcfFreeLevel21Pulse-data-v-2ca8c8ec;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
+@-webkit-keyframes gcfFreeLevel20Pulse-data-v-2ca8c8ec {
+    0% {
+        -webkit-box-shadow: 0 0 9px #eb2f2f;
+        box-shadow: 0 0 9px #eb2f2f
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 transparent;
+        box-shadow: 0 0 0 transparent
+    }
+
+    to {
+        -webkit-box-shadow: 0 0 9px #eb2f2f;
+        box-shadow: 0 0 9px #eb2f2f
+    }
+}
+
+@keyframes gcfFreeLevel20Pulse-data-v-2ca8c8ec {
+    0% {
+        -webkit-box-shadow: 0 0 9px #eb2f2f;
+        box-shadow: 0 0 9px #eb2f2f
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 transparent;
+        box-shadow: 0 0 0 transparent
+    }
+
+    to {
+        -webkit-box-shadow: 0 0 9px #eb2f2f;
+        box-shadow: 0 0 9px #eb2f2f
+    }
+}
+
+@-webkit-keyframes gcfFreeLevel21Pulse-data-v-2ca8c8ec {
+    0% {
+        -webkit-box-shadow: 0 0 9px #ff00c0;
+        box-shadow: 0 0 9px #ff00c0
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 transparent;
+        box-shadow: 0 0 0 transparent
+    }
+
+    to {
+        -webkit-box-shadow: 0 0 9px #ff00c0;
+        box-shadow: 0 0 9px #ff00c0
+    }
+}
+
+@keyframes gcfFreeLevel21Pulse-data-v-2ca8c8ec {
+    0% {
+        -webkit-box-shadow: 0 0 9px #ff00c0;
+        box-shadow: 0 0 9px #ff00c0
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 transparent;
+        box-shadow: 0 0 0 transparent
+    }
+
+    to {
+        -webkit-box-shadow: 0 0 9px #ff00c0;
+        box-shadow: 0 0 9px #ff00c0
+    }
+}
+
+.gcf-new-badge-level[data-v-551cb209] {
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    cursor: default
+}
+
+.gcf-new-badge-level .gcf-badge-level-value[data-v-551cb209] {
+    font-family: Poppins, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover
+}
+
+.gcf-new-badge-level .gcf-badge-level-value .Icon[data-v-551cb209] {
+    position: absolute;
+    left: .375rem;
+    top: .125rem
+}
+
+.gcf-new-badge-level-0 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/0.svg)
+}
+
+.gcf-new-badge-level-1 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/1.svg)
+}
+
+.gcf-new-badge-level-2 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/2.svg)
+}
+
+.gcf-new-badge-level-3 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/3.svg)
+}
+
+.gcf-new-badge-level-4 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/4.svg)
+}
+
+.gcf-new-badge-level-5 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/5.svg)
+}
+
+.gcf-new-badge-level-6 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/6.svg)
+}
+
+.gcf-new-badge-level-7 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/7.svg)
+}
+
+.gcf-new-badge-level-8 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/8.svg)
+}
+
+.gcf-new-badge-level-9 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/9.svg)
+}
+
+.gcf-new-badge-level-10 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/10.svg)
+}
+
+.gcf-new-badge-level-11 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/11.svg)
+}
+
+.gcf-new-badge-level-12 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/12.svg)
+}
+
+.gcf-new-badge-level-13 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/13.svg)
+}
+
+.gcf-new-badge-level-14 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/14.svg)
+}
+
+.gcf-new-badge-level-15 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/15.svg)
+}
+
+.gcf-new-badge-level-16 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/16.svg)
+}
+
+.gcf-new-badge-level-17 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/17.svg)
+}
+
+.gcf-new-badge-level-18 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/18.svg)
+}
+
+.gcf-new-badge-level-19 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/19.svg)
+}
+
+.gcf-new-badge-level-20 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/20.svg)
+}
+
+.gcf-new-badge-level-21 .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://gcv1-assets.gamersclub.com.br/assets/images/level/21.svg)
+}
+
+.gcf-new-badge-level-major .gcf-badge-level-value[data-v-551cb209] {
+    background-image: url(https://static.gamersclub.com.br/assets/images/level/major.svg)
+}
+
+.gcf-new-badge-level-20[data-v-551cb209],
+.gcf-new-badge-level-21[data-v-551cb209],
+.gcf-new-badge-level-major[data-v-551cb209] {
+    position: relative
+}
+
+.gcf-new-badge-level-20[data-v-551cb209]:after,
+.gcf-new-badge-level-21[data-v-551cb209]:after,
+.gcf-new-badge-level-major[data-v-551cb209]:after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    border-radius: 50%;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
+.gcf-new-badge-level-20[data-v-551cb209]:after {
+    -webkit-animation-name: gcfLevel20Pulse-data-v-551cb209;
+    animation-name: gcfLevel20Pulse-data-v-551cb209
+}
+
+.gcf-new-badge-level-21[data-v-551cb209] {
+    margin-top: -.125rem
+}
+
+.gcf-new-badge-level-21[data-v-551cb209]:after {
+    -webkit-animation-name: gcfLevel21Pulse-data-v-551cb209;
+    animation-name: gcfLevel21Pulse-data-v-551cb209
+}
