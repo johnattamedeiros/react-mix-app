@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PlayerCard from '../components/PlayerCard';
+import Home from '../components/Home';
 import { fetchPlayers } from '../api/playerService';
 
 const HomePage = () => {
@@ -33,6 +34,7 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
+      <Home/>
       {playerCards}
     </div>
   );

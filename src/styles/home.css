@@ -1,0 +1,81 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Metade da altura da tela */
+    width: 50vw; /* Metade da largura da tela */
+    margin: auto; /* Centraliza o componente na tela */
+    background-color: #1a1a1d; /* Fundo escuro, estilo gamer */
+    color: #fff; /* Texto branco */
+    border: 2px solid #00ff00; /* Borda neon ao redor do container */
+    border-radius: 10px; /* Cantos arredondados */
+  }
+  
+  .logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #00ff00; /* Texto com cor neon */
+  }
+  
+  .form-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 0 0 5px #00ff00; /* Efeito neon */
+  }
+  
+  .input-field {
+    padding: 10px;
+    width: 250px;
+    background-color: #333;
+    border: 2px solid #00ff00; /* Borda neon */
+    border-radius: 5px;
+    color: #00ff00;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    outline: none;
+    box-shadow: 0 0 10px #00ff00;
+  }
+  
+  .input-field::placeholder {
+    color: #00ff00;
+    opacity: 0.7;
+  }
+  
+  .submit-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00ff00;
+    color: #1a1a1d;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #1aff1a;
+  }
+  
