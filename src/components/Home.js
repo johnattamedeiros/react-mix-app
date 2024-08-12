@@ -1,11 +1,12 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import './../styles/home.css'
+import ApiService from './../api/apiService';
+import './../styles/styles.css'
 
 const Home = () => {
   const [gcId, setGcId] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!gcId) {
@@ -17,7 +18,12 @@ const Home = () => {
       id_gc: gcId
     };
 
-    console.log('Enviando JSON:', data);
+    try {
+      const response = await ApiService.enviarGcId(gcId);
+      alert('Gamersclub ID enviado com sucesso!');
+    } catch (error) {
+      alert('Ocorreu um erro ao enviar o Gamersclub ID. Tente novamente mais tarde.' + error);
+    }
 
     setGcId('');
   };
@@ -29,25 +35,25 @@ const Home = () => {
     }
   };
   return (
-    <div className="home-container">
-      <div className="logo-container">
-      <h1>mixdurasso</h1>
-      <a href="/" class="MainHeader__logo">
-      <img src="https://static.gamersclub.com.br/assets/header/gamersclub-hrz-w.svg" alt="Gamers Club" className="logo"></img></a>
-      </div>
+    <div className="player-card">
+    <img src="https://static.gamersclub.com.br/assets/header/gamersclub-hrz-w.svg" alt="Gamers Club" ></img>
+
+
+    <div className="player-info">
       <form onSubmit={handleSubmit} className="form-container">
         <label>
-          <p>Adicione seu id da gamersclub: </p>
+          <p>Digite seu id da Gamersclub :</p>
           <input
             type="text"
             value={gcId}
             onChange={handleChange}
             className="input-field"
           />
-        </label>
+        </label><br></br><br></br>
         <button type="submit" className="submit-button">Enviar</button>
       </form>
     </div>
+  </div>
   );
 };
 
