@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Expõe a porta 3001
-EXPOSE 80
+EXPOSE 3001
 
 # Comando para iniciar o servidor
-CMD ["npx", "serve", "-s", "build", "-l", "80"]
+CMD ["npx", "serve", "-s", "build", "-l", "3001"]
