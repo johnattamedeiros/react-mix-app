@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PlayerCard from '../components/PlayerCard';
+import TableWithPhotos from '../components/TableWithPhotos';
 import Home from '../components/Home';
 import { fetchPlayers } from '../api/playerService';
 
@@ -26,16 +26,11 @@ const HomePage = () => {
     return <div className="loading">Loading...</div>;
   }
 
-  const playerCards = [];
-  for (let i = 0; i < players.length; i++) {
-    const player = players[i];
-    playerCards.push(<PlayerCard key={player.id} player={player} />);
-  }
 
   return (
     <div className="home-page">
       <Home/>
-      {playerCards}
+      <TableWithPhotos data={players} />
     </div>
   );
 };

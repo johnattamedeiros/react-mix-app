@@ -70,3 +70,44 @@ body {
   font-size: 24px;
   margin-top: 50px;
 }
+.form-container {
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.form-container label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.form-container input[type="text"] {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #1e1e1e;
+  color: #fff;
+  outline: none;
+  margin-right: 10px;
+}
+
+.form-container input[type="text"]::placeholder {
+  color: #888;
+}
+
+.form-container button {
+  padding: 8px 16px;
+  background-color: #5a5a5a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #7a7a7a;
+}
