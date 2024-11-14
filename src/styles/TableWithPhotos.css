@@ -46,6 +46,7 @@
   
   .td-container .info {
     display: flex;
+    margin-right: 10px;
     flex-direction: column;
     align-items: flex-start;
     color: #fff;
@@ -65,4 +66,23 @@
     padding: 2px 8px;
     font-weight: bold;
     margin-top: 4px;
+  }
+  .stats-ico {
+    width: 20px!important;
+    height: 20px!important;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+
+  .player-column {
+    width: 5%!important;
+  }
+  .stat-column {
+    width: 10%!important;
+  }
+  .normal-column {
+    width: 10%!important;
+  }
+  .stat-span {
+    margin-right: 10px!important;
   }

@@ -8,13 +8,14 @@ const TableWithPhotos = ({ data }) => {
       <table className="custom-table">
         <thead>
           <tr>
-            <th>Player</th>
-            <th>Partida</th>
-            <th>Mapa</th>
-            <th>Pontos</th>
-            <th>Time A</th>
-            <th>Time B</th>
-            <th>Resultado</th>
+            <th class="player-column">Player</th>
+            {/* <th class="stat-column">Stats</th> */}
+            <th class="normal-column">Mapa</th>
+            <th class="normal-column">Pontos</th>
+            <th class="normal-column">Time A</th>
+            <th class="normal-column">Time B</th>
+            <th class="normal-column">Resultado</th>
+            <th class="normal-column">Partida</th>
           </tr>
         </thead>
         <tbody>
@@ -31,8 +32,6 @@ const TableWithPhotos = ({ data }) => {
                   </div>
                 </div>
               </td>
-              
-              <td>{row.id}</td>
               <td>{row.map}</td>
               <td style={{ color: row.ratingDiff > 0 ? 'green' : 'red' }}>
                 {row.ratingDiff > 0 ? `+${row.ratingDiff}` : row.ratingDiff}
@@ -42,6 +41,7 @@ const TableWithPhotos = ({ data }) => {
               <td style={{ color: row.win === 1 ? 'green' : 'red' }}>
                 {row.win === 1 ? 'Vitória' : 'Derrota'}
               </td>
+              <td>{row.id}</td>
             </tr>
           ))}
         </tbody>
