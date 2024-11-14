@@ -41,7 +41,15 @@ const TableWithPhotos = ({ data }) => {
               <td style={{ color: row.win === 1 ? 'green' : 'red' }}>
                 {row.win === 1 ? 'Vitória' : 'Derrota'}
               </td>
-              <td>{row.id}</td>
+              <td>
+              <a
+                href={`https://gamersclub.com.br/lobby/partida/${row.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {row.id}
+              </a>
+              </td>
             </tr>
           ))}
         </tbody>
