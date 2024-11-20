@@ -31,6 +31,13 @@
     border-radius: 5px;
   }
 
+  .photo-table-top {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
   .td-container {
     display: flex;
     align-items: center;
@@ -38,9 +45,9 @@
   }
   
   .td-container img {
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
     margin-right: 10px;
   }
   
@@ -86,3 +93,18 @@
   .stat-span {
     margin-right: 10px!important;
   }
+  .filter-container {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .filter-container select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+  }
+  

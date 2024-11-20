@@ -1,0 +1,109 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow-y: auto;
+}
+.stats-modal{
+  width: 100%;
+}
+.stats-modal-btn{
+  width: 100%;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-modal-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.tab.active {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+/* Tab Content */
+.tab-content {
+  width: 100%;
+}
+
+/* Table Styling */
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: left;
+  background-color: #444;
+  color: #fff;
+}
+
+.stats-table th,
+.stats-table td {
+  border: 1px solid #555;
+  padding: 8px;
+  
+}
+td div {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.stats-table th {
+  background-color: #555;
+  font-weight: bold;
+}
+
+.stats-table tr:nth-child(even) {
+  background-color: #3a3a3a;
+}
+
+.stats-table tr:hover {
+  background-color: #666;
+}

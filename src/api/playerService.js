@@ -1,4 +1,4 @@
-const API_URL = 'http://mixdurasso.com:3000/api/matches';
+const API_URL = 'http://mixdurasso.com:3000/api/player';
 
 export const fetchPlayers = async () => {
   const response = await fetch(API_URL);
@@ -7,6 +7,5 @@ export const fetchPlayers = async () => {
   }
   let players = await response.json();
 
-  console.log(players);
   return players;
 };

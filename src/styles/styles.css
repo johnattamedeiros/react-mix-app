@@ -12,6 +12,12 @@ body {
   justify-content: center;
   padding: 20px;
 }
+.add-account{
+  width: 5%;
+}
+.add-account-button{
+ padding: 5px;
+}
 
 .player-card {
   background-color: #333;
@@ -76,6 +82,7 @@ body {
   margin-bottom: 20px;
   color: #fff;
   font-family: Arial, sans-serif;
+  width: 100%;
 }
 
 .form-container label {

@@ -4,6 +4,7 @@ import './../styles/gc.css'
 
 const TableWithPhotos = ({ data }) => {
   return (
+    
     <div className="table-container">
       <table className="custom-table">
         <thead>
@@ -11,6 +12,7 @@ const TableWithPhotos = ({ data }) => {
             <th class="player-column">Player</th>
             {/* <th class="stat-column">Stats</th> */}
             <th class="normal-column">Mapa</th>
+            <th class="normal-column">Data</th>
             <th class="normal-column">Pontos</th>
             <th class="normal-column">Time A</th>
             <th class="normal-column">Time B</th>
@@ -33,11 +35,12 @@ const TableWithPhotos = ({ data }) => {
                 </div>
               </td>
               <td>{row.map}</td>
+              <td>{row.MatchDatum.data.data}</td>
               <td style={{ color: row.ratingDiff > 0 ? 'green' : 'red' }}>
                 {row.ratingDiff > 0 ? `+${row.ratingDiff}` : row.ratingDiff}
               </td>
-              <td>{row.teamNameA} - Rounds : {row.scoreA}</td>
-              <td>{row.teamNameB} - Rounds : {row.scoreB}</td>
+              <td>{row.teamNameA} <br></br> Rounds : {row.scoreA} <br></br></td>
+              <td>{row.teamNameB} <br></br> Rounds : {row.scoreB} <br></br></td>
               <td style={{ color: row.win === 1 ? 'green' : 'red' }}>
                 {row.win === 1 ? 'Vitória' : 'Derrota'}
               </td>
