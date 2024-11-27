@@ -35,7 +35,7 @@ const TableWithPhotos = ({ data }) => {
                 </div>
               </td>
               <td>{row.map}</td>
-              <td>{row.MatchDatum.data.data}</td>
+              <td>{row.MatchDatum?.data?.data ?? 'N/A'}</td>
               <td style={{ color: row.ratingDiff > 0 ? 'green' : 'red' }}>
                 {row.ratingDiff > 0 ? `+${row.ratingDiff}` : row.ratingDiff}
               </td>

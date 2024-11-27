@@ -12,12 +12,6 @@
   z-index: 1000;
   overflow-y: auto;
 }
-.stats-modal{
-  width: 100%;
-}
-.stats-modal-btn{
-  width: 100%;
-}
 
 /* Modal Content */
 .modal-content {

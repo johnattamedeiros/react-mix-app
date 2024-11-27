@@ -3,6 +3,9 @@ import {
   fetchHighestStats,
   fetchLowestStats,
   fetchRatingDiff,
+  updatePlayers,
+  updateMatches,
+  updateMatchesData
 } from "../api/statService";
 import './../styles/StatsModal.css';
 import './../styles/gc.css';
@@ -14,6 +17,14 @@ const StatsModal = () => {
   const [lowestStats, setLowestStats] = useState([]);
   const [ratingDiff, setRatingDiff] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(false);
+  const [isPasswordMatches, setIsPasswordMatches] = useState(false);
+  const [isPasswordPlayers, setIsPasswordPlayers] = useState(false);
+  const [isPasswordMatchesData, setIsPasswordMatchesData] = useState(false);
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const correctPassword = "mixdurasso321rje";
 
   const fetchData = async () => {
     setLoading(true);
@@ -32,10 +43,46 @@ const StatsModal = () => {
       setLoading(false);
     }
   };
+  const handlePasswordSubmit = () => {
+    if (password === correctPassword) {
+      setIsPasswordModalOpen(false); 
+      setPassword(""); 
+      setErrorMessage("");
+  
+      
+      if (isPasswordPlayers) {
+        updatePlayers();
+      } else if (isPasswordMatches) {
+        updateMatches();
+      } else if (isPasswordMatchesData) {
+        updateMatchesData();
+      }
+    } else {
+      setErrorMessage("Senha incorreta! Tente novamente.");
+    }
+  };
 
   const handleOpen = () => {
     setIsOpen(true);
     fetchData();
+  };
+  const handlePlayers = () => {
+    setIsPasswordPlayers(true);
+    setIsPasswordMatches(false);
+    setIsPasswordMatchesData(false);
+    setIsPasswordModalOpen(true);
+  };
+  const handleMatches = () => {
+    setIsPasswordMatches(true);
+    setIsPasswordPlayers(false);
+    setIsPasswordMatchesData(false);
+    setIsPasswordModalOpen(true);
+  };
+  const handleMatchesData = () => {
+    setIsPasswordMatches(false);
+    setIsPasswordPlayers(false);
+    setIsPasswordMatchesData(true);
+    setIsPasswordModalOpen(true);
   };
 
   const handleClose = () => setIsOpen(false);
@@ -54,19 +101,19 @@ const StatsModal = () => {
           <tr key={index}>
             {columns.map((col) => (
               <td key={col}>
-              {col === "nick" ? (
-                <div>
-                  <img
-                    src={`https://static.gamersclub.com.br/players/avatar/${row.player_id || row.idPlayer}/${row.player_id || row.idPlayer}_full.jpg`}
-                    alt={`${row[col]}'s photo`}
-                    className="photo-table-top"
-                  />
-                  <span>{row[col]}</span>
-                </div>
-              ) : (
-                row[col]
-              )}
-            </td>
+                {col === "nick" ? (
+                  <div>
+                    <img
+                      src={`https://static.gamersclub.com.br/players/avatar/${row.player_id || row.idPlayer}/${row.player_id || row.idPlayer}_full.jpg`}
+                      alt={`${row[col]}'s photo`}
+                      className="photo-table-top"
+                    />
+                    <span>{row[col]}</span>
+                  </div>
+                ) : (
+                  row[col]
+                )}
+              </td>
             ))}
           </tr>
         ))}
@@ -75,13 +122,44 @@ const StatsModal = () => {
   );
 
   return (
-    <div className="stats-modal">
-      <div className="stats-modal-btn">
-      <button className="open-modal-button submit-button-top" onClick={handleOpen}>
-        Top/Piores Stats
-      </button>
+    <div className="btns">
+      <div className="btns">
+        <button className="open-modal-button submit-button-top" onClick={handleOpen}>
+          Ranking
+        </button>
       </div>
-      
+      <div className="btns">
+        <button className="submit-button-top" onClick={handlePlayers}>
+          Carregar Players
+        </button>
+      </div>
+      <div className="btns">
+        <button className="submit-button-top" onClick={handleMatches}>
+          Carregar Partidas
+        </button>
+      </div>
+      <div className="btns">
+        <button className="submit-button-top" onClick={handleMatchesData}>
+          Carregar Dados Partidas
+        </button>
+      </div>
+
+      {isPasswordModalOpen && (
+        <div className="passwordModal">
+          <div className="passwordModal-content">
+            <h2>Digite a senha</h2>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Senha"
+            />
+            {errorMessage && <p className="error-message">{errorMessage}</p>}
+            <button onClick={handlePasswordSubmit}>Confirmar</button>
+            <button onClick={() => setIsPasswordModalOpen(false)}>Cancelar</button>
+          </div>
+        </div>
+      )}
       {isOpen && (
         <div className="modal-overlay">
           <div className="modal-content">
@@ -147,8 +225,8 @@ const StatsModal = () => {
                   {activeTab === "rating" &&
                     renderTable(
                       ratingDiff,
-                      [ "nick", "total_rating_diff"],
-                      [ "Nickname", "Total Rating Diff"]
+                      ["nick", "total_rating_diff"],
+                      ["Nickname", "Total Rating Diff"]
                     )}
                 </div>
               </>

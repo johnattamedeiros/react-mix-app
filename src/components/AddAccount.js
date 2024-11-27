@@ -44,7 +44,7 @@ const AddAccount = () => {
     <div className='add-account'>
       <div className='add-account-button'>
 
-        <button className="open-modal-button submit-button" onClick={() => setIsModalOpen(true)}>
+        <button className="open-modal-button submit-button-top" onClick={() => setIsModalOpen(true)}>
           +
         </button>
       </div>

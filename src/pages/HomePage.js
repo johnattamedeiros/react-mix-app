@@ -23,11 +23,8 @@ const HomePage = () => {
         setLoading(false);
       }
     };
-    // Faz a consulta nas matches com base no jogador selecionado
     const fetchMatchesForPlayer = async () => {
       if (!selectedPlayer) {
-        console.log("fech allmatches");
-        // Caso nenhum jogador seja selecionado, carrega todas as matches
         const allMatches = await fetchMatches();
         setMatches(allMatches);
         return;
@@ -35,7 +32,7 @@ const HomePage = () => {
 
       try {
         setLoading(true);
-        const filteredMatches = await fetchMatches(selectedPlayer.id); // Supondo que `fetchMatches` aceite um parâmetro
+        const filteredMatches = await fetchMatches(selectedPlayer.id);
         setMatches(filteredMatches);
       } catch (error) {
         console.error('Error fetching matches for player:', error);
@@ -43,9 +40,7 @@ const HomePage = () => {
         setLoading(false);
       }
     };
-    console.log("chamando matchforplayer");
     fetchMatchesForPlayer();
-    console.log("chamando loadpLayers");
     loadPlayers();
   }, [selectedPlayer]);
 
